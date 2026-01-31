@@ -347,3 +347,7 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+
+# Settings and Password files should not go to GitHub
+appsettings.json
+appsettings.Development.json
