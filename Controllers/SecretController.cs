@@ -57,7 +57,7 @@ namespace SelfDestructMessageAPI.Controllers
             {
                 if (foundMessage.FirstReadTime == null)
                 {
-                    foundMessage.FirstReadTime = DateTime.Now;
+                    foundMessage.FirstReadTime = DateTime.UtcNow;
 
                     var newSettings = new MemoryCacheEntryOptions()
                         .SetAbsoluteExpiration(TimeSpan.FromSeconds(foundMessage.Duration));
